@@ -1,0 +1,436 @@
+*{
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #080000;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif, "Montserrat";
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    transition: 2s all ease;
+    overflow-x: hidden;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 70px;
+    border-radius: 6px;
+}
+
+header h1{
+    letter-spacing: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px 20px 10px 10px;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 20px;
+    padding-top: 14px;
+    padding-left: 20px;
+}
+
+header nav{
+    text-decoration: none;
+    margin-top: 25px;
+    margin-right: 60px;
+}
+
+.active{
+    margin-left: 40px;
+    color: grey;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+    letter-spacing: 5px;
+}
+ 
+.active:hover {
+    color: aliceblue;
+    border-bottom-color: brown;
+    transition: all 0.3s ease;
+}
+
+/* header nav a:hover {
+    color: aliceblue;
+    border-bottom-color: brown;
+    transform: scale(2); 
+} */
+
+#main{
+    position: relative;
+    bottom: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    z-index: -1;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    
+    animation: fadeOut forwards 2s;
+    animation-timeline: scroll();
+}
+
+#main-cont{
+    width: 50%;
+    height: 100vh;
+    background-color: gainsboro;
+    display: inline-block;
+}
+
+#resume {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    bottom: 300px;
+    left: 30px;
+    animation: fadeInUp 1.5s ease-in-out;
+    color: white;
+    transition: .5s;
+}
+
+#resume a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#resume:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 87, 34, 0.5);
+    border-radius: 50px;
+
+}
+
+#main-img{
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    display: inline-block;
+}
+
+#main-img img{
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+#cont{
+    position: relative;
+    top: 30%;
+    padding: 10px;
+}
+#contents{
+    margin-left: 20px;
+    width: 100%;
+    text-align: start;
+}
+#contents h1{
+    width: 100%;
+    font-family: Castoro, serif;
+  text-shadow: 4px 4px 4px #aaa;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+  font-size: 10rem;
+  line-height: 92px;
+  letter-spacing: 7px;
+}
+
+#main-cont h3 {
+    font-size: 24px;
+    color: #333;
+    letter-spacing: 3px;
+}
+
+#main-cont h1 {
+    font-size: 36px;
+    color: #444;
+}
+
+#typing-text {
+    color: #007BFF;
+    font-weight: bold;
+    border-right: 2px solid #007BFF;
+    padding-right: 5px;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #007BFF;
+    }
+}
+
+#cont{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: start;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#main-cont h3, #main-cont h1 {
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+#main-img img {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+#main-pro{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#main-pro table{
+    width: 80%;
+}
+
+#main-pro table th td{
+    width: 40%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section-title {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #fffdfd;
+    display: inline;
+    position: relative;
+    left: 40%;
+    bottom: 60px;
+    border-bottom: red solid 2px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+    /* background: radial-gradient(circle, rgba(63, 81, 181, 0.8) 0%, rgba(40, 53, 147, 0.8) 50%, rgba(26, 35, 126, 0.8) 100%); */
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.project {
+    text-align: center;
+    background: #131212;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project h3 {
+    letter-spacing: 5px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.project a { 
+    text-decoration: none;
+}
+
+.project:hover {
+    transition: .5s;
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.35) 8px 8px 15px;
+}
+
+.footer {
+    background-color: #131212;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-form {
+    flex: 1;
+}
+
+.footer-contact {
+    letter-spacing: 3px;
+    flex: 1;
+    text-align: left;
+    position: relative;
+    left: 10%;
+}
+.footer-form h3{
+    position: relative;
+    left: 40%;
+}
+.footer-contact h3{
+    position: relative;
+    left: 10%;
+}
+.footer-form h3,
+.footer-contact h3 {
+    margin-bottom: 10px;
+    font-size: 1.9rem;
+    color: #ff9800;
+}
+
+.footer-form table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+.footer-form label{
+    position: relative;
+    left: 80px;
+}
+
+.footer-form input,
+.footer-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer-form button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-form button:hover {
+    background-color: #e68a00;
+}
+
+.footer-contact p {
+    line-height: 1.8;
+}
+.footer-contact .social-links{
+    display: flex;
+}
+.footer-contact .social-links a {
+    color: #ff9800;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.footer-contact .social-links a:hover {
+    color: #e68a00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+}
+.about-cont{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.about-cont img{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 100px 100px, rgba(100, 99, 99, 0.911) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(97, 96, 96, 0.932) 0px 10px 40px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.about-me{
+    width: 600px;
+    text-align: center;
+}
+
+.about-me p{
+    text-align: left;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-me h2{
+    letter-spacing: 3px;
+    border-bottom: #e68a00 2px solid;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
