@@ -193,7 +193,6 @@ header nav{
   .developer_skills .text-blk.desc {
     font-size: 20px;
     line-height: 27.28px;
-    color: #999999;
     font-weight: 700;
     text-align: center;
     padding-top: 10px;
@@ -278,7 +277,13 @@ header nav{
     border-radius: 20%;
   }
 
+  #skill-name{
+    color: white;
+  }
 
+  #card{
+    background-color: black;
+  }
   @keyframes fadeInUp {
     from {
         opacity: 0;
